@@ -1,0 +1,47 @@
+{
+  "name": "mahmoud/sage-vimeo",
+  "type": "package",
+  "license": "MIT",
+  "description": "simple package for using vimeo sdk in your Sage 10 projects.",
+  "authors": [
+    {
+      "name": "Mahmoud Alawad",
+      "email": "awad25.ma@gmail.com"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "sage",
+    "vimeo"
+  ],
+  "support": {
+    "issues": "https://github.com/mahmoud-alawad/sage-vimeo/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mahmoud\\SageVimeo\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require": {
+    "vimeo/vimeo-api": "^3.0",
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "scripts": {
+    "lint": [
+      "phpcs --ignore=vendor --extensions=php --standard=PSR12 ."
+    ]
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "Mahmoud\\SageVimeo\\SageVimeoServiceProvider"
+      ]
+    }
+  }
+}
