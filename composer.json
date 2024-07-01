@@ -1,5 +1,5 @@
 {
-  "name": "mahmoud/sage-vimeo",
+  "name": "mahmoud-alawad/sage-vimeo",
   "type": "package",
   "license": "MIT",
   "description": "simple package for using vimeo sdk in your Sage 10 projects.",
